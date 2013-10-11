@@ -27,7 +27,7 @@ $.ajax({
   var allLines = data.split('\n').map(function (i) {
     return i.trim();
   }).filter(function (i) {
-    return i.length && (!(i[0] === '#'));
+    return i.length && !(i[0] === '#');
   });
   var remainingLines = allLines.concat([]);
   showRandomLine(allLines, remainingLines);
