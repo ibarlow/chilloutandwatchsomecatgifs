@@ -10,13 +10,28 @@ globalstrict:true, nomen:false, newcap:false */
 
 "use strict";
 
+function showRandomLine(allLines, remainingLines) {
+  if (remainingLines.length === 0) {
+    remainingLines = allLines.concat([]);
+  }
+  var current = Math.floor(Math.random() * remainingLines.length);
+  //console.log("Showing gif #" + current + " of " + remainingLines.length);
+  var cat = remainingLines.splice(current, 1)[0];
+  $('html').css('background-image', 'url("' + cat + '")');
+}
+
 $.ajax({
   url: 'catgifs.txt',
   dataType: 'text'
-}).done(function (data, textStatus) {
-  console.log(textStatus, data);
-  $('html').css('background-image', 'url("http://i.imgur.com/4PD98.gif")');
-  console.log($('html').css('background-image'));
+}).done(function (data) {
+  var allLines = data.split('\n').map(function (i) {
+    return i.trim();
+  }).filter(function (i) {
+    return i.length && (!(i[0] === '#'));
+  });
+  var remainingLines = allLines.concat([]);
+  showRandomLine(allLines, remainingLines);
+  setInterval(showRandomLine, 10000, allLines, remainingLines);
 }).fail(function (jqXHR, textStatus, errorThrown) {
   console.log(textStatus, errorThrown);
 });
