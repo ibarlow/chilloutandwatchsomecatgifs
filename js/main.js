@@ -9,3 +9,14 @@ moz:true, esnext:false, indent:2, maxerr:50, devel:true, node:true, boss:true,
 globalstrict:true, nomen:false, newcap:false */
 
 "use strict";
+
+$.ajax({
+  url: 'catgifs.txt',
+  dataType: 'text'
+}).done(function (data, textStatus) {
+  console.log(textStatus, data);
+  $('html').css('background-image', 'url("http://i.imgur.com/4PD98.gif")');
+  console.log($('html').css('background-image'));
+}).fail(function (jqXHR, textStatus, errorThrown) {
+  console.log(textStatus, errorThrown);
+});

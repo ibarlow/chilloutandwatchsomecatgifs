@@ -7,7 +7,8 @@ button,
 input,
 select,
 textarea {
-  color: #222;
+  color: #eee;
+  background: #222;
 }
 
 body {
@@ -61,7 +62,7 @@ textarea {
    ========================================================================== */
 
 body {
-  font: 56px/58px 'OpenSansSemibold', Helvetica, Helvetica Neue, Arial, sans-serif;
+  font: 56px/58px 'Varela', 'OpenSansSemibold', Helvetica, Helvetica Neue, Arial, sans-serif;
 }
 
 .wrapper {
@@ -113,10 +114,17 @@ nav a:hover {
    ============== */
 
 .main {
-  padding: 30px 0;
+  padding: 60px 0;
   margin-top: 20vh !important;
-  font-variant: small-caps;
+  width: 30vw !important;
   text-align: center;
+  background-color: #444;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+img {
+  margin-bottom: .35em;
 }
 
 small {
