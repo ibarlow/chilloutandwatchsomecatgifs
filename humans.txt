@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ian Barlow -- Designer/Conceptualist -- ibarlow
+    Blake Winton -- Implementor/Technologist -- bwinton
+
+# THANKS
+
+    Mike Conley: for all the cat gifs!
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
