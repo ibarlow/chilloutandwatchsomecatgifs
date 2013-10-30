@@ -118,8 +118,8 @@ nav a:hover {
   margin-top: 10vh !important;
   width: 90vw !important;
   text-align: center;
-  background-color: #444;
-  background-color: rgba(0, 0, 0, 0.5);
+/*    background-color: #444; */
+/*  background-color: rgba(0, 0, 0, 0.5); */
   border-radius: 5px;
 }
 
