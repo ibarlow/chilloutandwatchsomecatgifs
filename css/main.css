@@ -14,7 +14,7 @@ textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
-  black 0px 0px 10px, black 0px 0px 3px;
+  text-shadow: black 0px 0px 10px, black 0px 0px 3px;
 }
 
 ::-moz-selection {
