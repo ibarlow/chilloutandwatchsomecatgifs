@@ -14,6 +14,7 @@ textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
+  black 0px 0px 10px, black 0px 0px 3px;
 }
 
 ::-moz-selection {
@@ -62,7 +63,7 @@ textarea {
    ========================================================================== */
 
 body {
-  font: 56px/58px 'Varela', 'OpenSansSemibold', Helvetica, Helvetica Neue, Arial, sans-serif;
+  font: 36px/38px 'Varela', 'OpenSansSemibold', Helvetica, Helvetica Neue, Arial, sans-serif;
 }
 
 .wrapper {
@@ -161,80 +162,14 @@ small {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-
-/* ====================
-  INTERMEDIATE: Menu
-   ==================== */
-
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0;
-  }
-
-  nav li:first-child a {
-    margin-left: 0;
-  }
-
-  nav li:last-child a {
-    margin-right: 0;
-  }
-
-/* ========================
-  INTERMEDIATE: IE Fixes
-   ======================== */
-
-  nav ul li {
-    display: inline;
-  }
-
-  .oldie nav a {
-    margin: 0 0.7%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-  WIDE: CSS3 Effects
-   ==================== */
-
-/* ============
-  WIDE: Menu
-   ============ */
-
-  .title {
-    float: left;
-  }
-
-  nav {
-    float: right;
-    width: 38%;
-  }
-
-/* ============
-  WIDE: Main
-   ============ */
-  .main {
-    padding: 60px 0;
-    margin-top: 20vh !important;
-    width: 30vw !important;
-  }
-
-}
-
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 360px) {
 
 /* ===============
   Maximal Width
    =============== */
 
-  .wrapper {
-    width: 1026px; /* 1140px - 10% for margins */
-    margin: 0 auto;
+  body {
+    font: 56px/58px 'Varela', 'OpenSansSemibold', Helvetica, Helvetica Neue, Arial, sans-serif;
   }
 }
 
