@@ -124,8 +124,20 @@ nav a:hover {
   border-radius: 5px;
 }
 
-img {
+.cat-crown {
   margin-bottom: .35em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0px;
+  background-image: url("../cat-crown.png");
+  width: 100%;
+  height: 52px;
+}
+
+@media (min-resolution: 2dppx) {
+  .cat-crown {
+    background-image: url("../cat-crown@2x.png");
+  }
 }
 
 small {
@@ -162,7 +174,7 @@ small {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 639px) {
 
 /* ===============
   Maximal Width
@@ -170,6 +182,14 @@ small {
 
   body {
     font: 56px/58px 'Varela', 'OpenSansSemibold', Helvetica, Helvetica Neue, Arial, sans-serif;
+  }
+
+  .main {
+    width: 40vw !important;
+    margin-left: 30vw;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
   }
 }
 
